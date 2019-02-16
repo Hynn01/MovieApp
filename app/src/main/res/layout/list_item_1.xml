@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/image111"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="#ddd"
+        android:src="@drawable/test_img"/>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="5dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/movieName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginVertical="5dp"
+            tools:text="无双"/>
+
+        <TextView
+            android:id="@+id/movieType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="1dp"
+            android:textSize="12sp"
+            tools:text="电影类型：剧情、动作犯罪"/>
+
+        <TextView
+            android:id="@+id/movieDirector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="1dp"
+            android:textSize="12sp"
+            tools:text="导演：庄文强"/>
+
+        <TextView
+            android:id="@+id/movieActors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="1dp"
+            android:textSize="12sp"
+            tools:text="演员：周润发、郭富城、张静初"/>
+
+        <TextView
+            android:id="@+id/movieTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="1dp"
+            android:textSize="12sp"
+            tools:text="上映时间：2018年"/>
+
+    </LinearLayout>
+
+</LinearLayout>

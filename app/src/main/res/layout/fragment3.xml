@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="电影分类"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@android:color/white"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="horizontal">
+
+            <q.rorbin.verticaltablayout.VerticalTabLayout
+                android:id="@+id/tablayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EF7062"
+                android:visibility="visible"
+                app:indicator_color="#FFFFFF"
+                app:indicator_corners="5dp"
+                app:indicator_gravity="left"
+                app:tab_height="50dp"
+                app:tab_mode="scrollable"
+                app:tabBackground="@null"/>
+
+
+        </LinearLayout>
+
+        <cn.youngkaaa.yviewpager.YViewPager
+            android:id="@+id/viewpager1"
+            android:layout_width="wrap_content"
+            android:background="@android:color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:orientation="vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>

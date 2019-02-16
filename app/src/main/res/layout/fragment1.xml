@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电影淘"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ec223b"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"/>
+
+        <!--
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_search"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            app:cardBackgroundColor="#f2f2f2"
+            app:cardCornerRadius="2dp">-->
+
+
+            <!--<android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+                <!--
+                <EditText
+                    android:id="@+id/edit_text_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="search"
+                    android:background="#00ffffff"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textColor="#ffd46c" />-->
+
+            <!--</android.support.design.widget.TextInputLayout>-->
+            <!--
+            <ImageView
+                android:id="@+id/iv_bottom_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:padding="12dp"
+                android:src="@drawable/icon_navigation_search" />
+
+        </android.support.v7.widget.CardView>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/one_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants">
+            <TextView
+                android:id="@+id/one_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日热映"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants">
+            <TextView
+                android:id="@+id/two_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐好影"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/three_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants">
+            <TextView
+                android:id="@+id/three_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="猜你喜欢"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants">
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:clickable="true"
+                android:textColor="@layout/text_color"
+                android:layout_centerInParent="true"/>-->
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:scaleType="matrix"
+            android:src="@drawable/line"
+            android:background="@android:color/white"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#CCCCCC" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

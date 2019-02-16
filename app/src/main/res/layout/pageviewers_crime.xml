@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/ll_action">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="0.5dp"
+            android:background="#7c7c7c"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="犯罪片"
+            android:textSize="14sp"
+            android:textColor="#7c7c7c"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#7c7c7c"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/img_hot1"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/img_hot2"/>
+
+    </LinearLayout>>
+
+</LinearLayout>
+
